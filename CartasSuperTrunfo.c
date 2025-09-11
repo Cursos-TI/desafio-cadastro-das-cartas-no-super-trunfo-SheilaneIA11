@@ -55,7 +55,7 @@ int main() {
     scanf(" %[^\n]", nomecidade1);
 
     printf("Digite o número de habitantes da cidade: \n");
-    scanf(" %d", &populacao1);
+    scanf(" %lu", &populacao1); // Use %lu para unsigned long int
 
     printf("Digite a área da cidade em quilômetros quadrados: \n");
     scanf(" %f", &area1);
@@ -83,7 +83,7 @@ int main() {
     scanf(" %[^\n]", nomecidade2);
 
     printf("Digite o número de habitantes da cidade: \n");
-    scanf(" %d", &populacao2);
+    scanf(" %lu", &populacao2); // Use %lu para unsigned long int
 
     printf("Digite a área da cidade em quilômetros quadrados: \n");
     scanf(" %f", &area2);
@@ -128,8 +128,29 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
     printf("Super Poder: %.2f\n", super_poder2);
 
-    // Comparação das Cartas
+    //Comparação das Cartas
     printf("\n--- Comparacao de Cartas ---\n");
+
+     //Comparação da Populacao
+    printf("Populacao: Carta &d venceu (&d\n)", (populacao1 > populacao2) ? 1 : 2, (populacao1 > populacao2));
+    
+    //Comparação da Area
+    printf("Area: Carta %d venceu (%d)\n", (area1 > area2) ? 1 : 2, (area1 > area2) ? 1 : 0);
+
+    //Comparação do PIB
+    printf("PIB: Carta %d venceu (%d)\n", (pib1 > pib2) ? 1 : 2, (pib1 > pib2) ? 1 : 0);
+
+    //Comparação dos Pontos Turisticos
+    printf("Pontos Turisticos: Carta %d venceu (%d)\n", (pontosturisticos1 > pontosturisticos2) ? 1 : 2, (pontosturisticos1 > pontosturisticos2) ? 1 : 0);
+
+    //Comparação da Densidade Populacional (menor valor vence)
+    printf("Densidade Populacional: Carta %d venceu (%d)\n", (densidade1 < densidade2) ? 1 : 2, (densidade1 < densidade2) ? 1 : 0);
+
+    //Comparação do PIB per Capita
+    printf("PIB per Capita: Carta %d venceu (%d)\n", (pib_per_capita1 > pib_per_capita2) ? 1 : 2, (pib_per_capita1 > pib_per_capita2) ? 1 : 0);
+
+    //Comparação do Super Poder
+    printf("Super Poder: Carta %d venceu (%d)\n", (super_poder1 > super_poder2) ? 1 : 2, (super_poder1 > super_poder2) ? 1 : 0);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
