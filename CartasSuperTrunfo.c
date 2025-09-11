@@ -8,7 +8,7 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    // Definição das variáveis para armazenar as propriedades das cidades
+    // Definição das variáveis para armazenar as propriedades das cidades.
     char estado1;
     char codigocarta1[4];
     char nomecidade1[50];
@@ -82,7 +82,7 @@ int main() {
     printf("Código da carta: %s\n", codigocarta1);
     printf("Nome da cidade: %s\n", nomecidade1);
     printf("Número de habitantes: %d\n", populacao1);
-    printf("Área da cidade: %.2f km²\n", area1); // Usei %.2f para formatar com 2 casas decimais
+    printf("Área da cidade: %.2f km²\n", area1); // Usei %.2f para formatar com 2 casas decimais.
     printf("PIB da cidade: %.2f\n", pib1);
     printf("Pontos turísticos: %d\n", pontosturisticos1);
 
