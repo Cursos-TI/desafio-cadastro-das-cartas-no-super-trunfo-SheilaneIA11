@@ -20,11 +20,11 @@ int main() {
     float pib1;
     int pontosturisticos1;
 
-    //Novas variáveis para os calculos 
+    // Novas variáveis para os calculos 
     float densidade1;
     float pib_per_capita1;
 
-    //Variáveis para a Carta 2
+    // Variáveis para a Carta 2
     char estado2;
     char codigocarta2[4];
     char nomecidade2[50];
@@ -33,7 +33,7 @@ int main() {
     float pib2;
     int pontosturisticos2;
 
-    //Novas variáveis para os calculos
+    // Novas variáveis para os calculos
     float densidade2;
     float pib_per_capita2;
     
@@ -63,6 +63,10 @@ int main() {
 
     printf("Digite a quantidade de pontos turísticos na cidade: \n");
     scanf(" %d", &pontosturisticos1);
+ 
+     // Calculo da Carta 1
+    densidade1 = (float)populacao1 / area1;
+    pib_per_capita1 = (pib1 * 1000000000.0) / (float)populacao1;
 
     // Cadastro da Carta 2
     printf("\n--- Cadastro da Carta 2 ---\n");
@@ -86,6 +90,10 @@ int main() {
 
     printf("Digite a quantidade de pontos turísticos na cidade: \n");
     scanf(" %d", &pontosturisticos2);
+
+    // Calculo da Carta 2
+    densidade2 = (float)populacao2 / area2;
+    pib_per_capita2 = (pib2 * 1000000000.0) / (float)populacao2;
 
     // Exibição dos dados
     printf("\n--- Dados da Carta 1 ---\n");
