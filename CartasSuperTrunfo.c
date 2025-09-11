@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo - Países.
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 
-// Nível Aventureiro - Calculando Densidade Populacional e PIB per Capita
-
+// Desafio Aventureiro - Calculando Densidade Populacional e PIB per Capita.
+// Desafio Mestre - Batalha de Cartas no Super Trunfo.
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -15,7 +15,7 @@ int main() {
     char estado1;
     char codigocarta1[4];
     char nomecidade1[50];
-    int populacao1;
+    unsigned long int populacao1; // Tipo alterado para unsigned long int
     float area1;
     float pib1;
     int pontosturisticos1;
