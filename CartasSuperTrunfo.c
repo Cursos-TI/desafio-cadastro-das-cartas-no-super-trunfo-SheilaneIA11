@@ -5,6 +5,9 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 
+// Nível Aventureiro - Calculando Densidade Populacional e PIB per Capita
+
+
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -17,6 +20,10 @@ int main() {
     float pib1;
     int pontosturisticos1;
 
+    //Novas variáveis para os calculos 
+    float densidade1;
+    float pib_per_capita1;
+
     //Variáveis para a Carta 2
     char estado2;
     char codigocarta2[4];
@@ -25,6 +32,10 @@ int main() {
     float area2;
     float pib2;
     int pontosturisticos2;
+
+    //Novas variáveis para os calculos
+    float densidade2;
+    float pib_per_capita2;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
