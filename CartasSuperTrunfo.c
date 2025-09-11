@@ -24,11 +24,14 @@ int main() {
     float densidade1;
     float pib_per_capita1;
 
+    // Nova variável para o Super Poder da carta 1
+    float super_capita1;
+
     // Variáveis para a Carta 2
     char estado2;
     char codigocarta2[4];
     char nomecidade2[50];
-    int populacao2;
+    unsigned long int populacao2; //Tipo alterado para unsigned long int
     float area2;
     float pib2;
     int pontosturisticos2;
@@ -36,6 +39,9 @@ int main() {
     // Novas variáveis para os calculos
     float densidade2;
     float pib_per_capita2;
+
+    // Nova variável para o Super Poder da carta 2
+    float super_capita2;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
