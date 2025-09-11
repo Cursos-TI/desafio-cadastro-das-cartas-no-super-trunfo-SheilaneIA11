@@ -20,12 +20,10 @@ int main() {
     float pib1;
     int pontosturisticos1;
 
-    // Novas variáveis para os calculos 
+    // Novas variáveis para os calculos da carta 1
     float densidade1;
     float pib_per_capita1;
-
-    // Nova variável para o Super Poder da carta 1
-    float super_capita1;
+    float super_poder1; // Nova variável para o Super Poder da carta 1
 
     // Variáveis para a Carta 2
     char estado2;
@@ -36,12 +34,10 @@ int main() {
     float pib2;
     int pontosturisticos2;
 
-    // Novas variáveis para os calculos
+    // Novas variáveis para os calculos da carta 2
     float densidade2;
     float pib_per_capita2;
-
-    // Nova variável para o Super Poder da carta 2
-    float super_capita2;
+    float super_poder2; // Nova variável para o Super Poder da carta 2
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -70,9 +66,10 @@ int main() {
     printf("Digite a quantidade de pontos turísticos na cidade: \n");
     scanf(" %d", &pontosturisticos1);
  
-     // Calculo da Carta 1
+    // Calculo da Carta 1
     densidade1 = (float)populacao1 / area1;
     pib_per_capita1 = (pib1 * 1000000000.0) / (float)populacao1;
+    super_poder1 = (float)populacao1 + area1 + pib1 + (float)pontosturisticos1 + pib_per_capita1 + (1.0 / densidade1);
 
     // Cadastro da Carta 2
     printf("\n--- Cadastro da Carta 2 ---\n");
@@ -100,6 +97,7 @@ int main() {
     // Calculo da Carta 2
     densidade2 = (float)populacao2 / area2;
     pib_per_capita2 = (pib2 * 1000000000.0) / (float)populacao2;
+    super_poder2 = (float)populacao2 + area2 + pib2 + (float)pontosturisticos2 + pib_per_capita2 + (1.0 / densidade2);
 
     // Exibição dos dados
     printf("\n--- Dados da Carta 1 ---\n");
@@ -114,6 +112,7 @@ int main() {
     // Exibindo os novos dados carta 1
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
+    printf("Super Poder: %.2f\n", super_poder1);
 
     printf("\n--- Dados da Carta 2 ---\n");
     printf("Estado: %c\n", estado2);
@@ -127,6 +126,7 @@ int main() {
      // Exibindo os novos dados carta 2
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
+    printf("Super Poder: %.2f\n", super_poder2);
     
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
